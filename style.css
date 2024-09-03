@@ -1,0 +1,131 @@
+body {
+
+    /* z-index: 0; */
+    background-position: center;
+    background-color: rgba(247, 229, 229, 0.3);
+
+    padding: 1rem;
+
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    direction: rtl;
+    line-height: 1.8;
+    word-spacing: 5px;
+
+}
+
+p {
+    /* z-index: 0; */
+    font-size: x-large;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {color: rgb(223, 130, 23);
+    font-size: x-large;
+    z-index: 0;
+    text-align: right;
+
+}
+
+.parent_div {
+    max-width: 50em;
+    margin: auto;
+}
+
+
+.logo {
+    text-align: center;
+}
+
+#img1 {
+    max-width: 35rem;
+
+
+}
+
+
+
+li {
+    font-size: x-large;
+    color: rgb(34, 11, 164);
+}
+
+.head_title {
+    text-align: center;
+    font-size: 40px;
+
+}
+
+
+
+
+.icon {
+
+    width: 4em;
+    height: 4em;
+    transition: transform 0.5s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    
+
+}
+
+.icon:hover {
+    transform: scale(1.5);
+
+}
+
+.img2 {
+    margin-top: 3em;
+    padding: 1em;
+    text-align: center;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content:  space-evenly;;
+
+}
+
+
+.last_pa {
+    font-size: 1.2rem;
+    margin-top: 4em;
+}
+
+
+
+
+
+@keyframes scrollFromUp {
+    0% {
+        transform: translateY(-50%); /* Start above the viewport */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateY(0); /* End at its original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.fade-in {
+    opacity: 0; /* Start invisible */
+    animation: scrollFromUp 0.5s ease forwards;
+}
+
+.fade-in.visible {
+    opacity: 1; /* Become visible */
+}
+
+.fade-in1 {
+    opacity: 0; /* Start invisible */
+    transition:  1.5s ease 0s ; /* Transition for opacity */
+}
+
+.fade-in1.visible {
+    opacity: 1; /* Become visible */
+}
